@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpxskpkxhung4"]
+
+[ext_resource type="Script" path="res://scripts/main/main.gd" id="1_gpndb"]
+[ext_resource type="PackedScene" uid="uid://cjbh854qvgrco" path="res://scenes/world/world.tscn" id="2_f5xbw"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_gpndb")
+
+[node name="World" parent="." instance=ExtResource("2_f5xbw")]
+
+[node name="Camera2D" type="Camera2D" parent="World"]
+position = Vector2(3684, 4274)
+zoom = Vector2(0.25, 0.25)
